@@ -5,6 +5,12 @@
 </head><body><img src="./MGE_SITE_files/MGE_GIF.gif" width="1920" height="1080" preload"auto"="">
 
 
-<source src="./MGE_SITE_files/MGE_V2.mp3" autoplay="" loop="" type="audio/mpeg"></source>
- 
-  </body></html>
+<audio autoplay loop muted>
+  <source src="./MGE_SITE_files/MGE_V2.mp3" type="audio/mpeg">
+</audio>
+<script>
+// Включаем звук после загрузки страницы
+window.addEventListener('click', function() {
+  document.querySelector('audio').muted = false;
+});
+</script>
