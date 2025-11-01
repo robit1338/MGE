@@ -1,15 +1,47 @@
-<html>
-<!-- saved from url=(0050)https://https://github.com/robit1338/MGE.github.io? -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
-     <title>Popalsya kotoryi kusalsa</title> 
-</head><body><img src="./MGE_SITE_files/MGE_GIF.gif" width="1920" height="1080" preload"auto"="">
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Checking your browser...</title>
+    <link rel="shortcut icon" href="img/Favicon.ico" type="image/x-icon">
+</head>
 
-<audio autoplay loop muted>
-  <source src="./MGE_SITE_files/MGE_V2.ogg" type="audio/mpeg">
-</audio>
-<script>
-window.addEventListener('click', function() {
-  document.querySelector('audio').muted = false;
-});
-</script>
+<body>
+    <div class="container-video" id="container-video">
+        <video class="video" id="video" autoplay muted loop>
+            <source src="vid/video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="container" id="container">
+        <img class="gif" src="img/dots.gif" alt="Dots">
+        <h2 class="text">Checking your browser before accessing attachment.</h2>
+        <p class="text">This process is automatic. Your browser will redirect to your requested content shortly.</p>
+        <p class="text-captcha" id="text-captcha">Please enter captcha</p>
+        <div class="counter" id="counter">3</div>
+        <div class="recaptcha-container" id="recaptcha-container">
+            <div class="button-container">
+                <div class="button" id="button" onclick="showVideo()"></div>
+            </div>
+            <div class="text-container">
+                <p>I'm not a robot</p>
+            </div>
+            <div class="image-container">
+                <img src="img/RecaptchaLogo.png" alt="Recaptcha">
+                <p>Privacy - Terms</p>
+            </div>
+        </div>
+        <a class="link" href="https://github.com/qxzxf/ScreamerSite">DDoS protection by
+            Cloudflare</a>
+        <p>Ray ID: 348759h65g34h</p>
+    </div>
+</body>
+
+<script src="main.js"></script>
+
+</html>
